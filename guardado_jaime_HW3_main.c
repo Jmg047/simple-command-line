@@ -24,14 +24,9 @@ int main (int argc, char* argv[]) {
 
     int i = 0;               // i set to 0 for indexing purposes.
     int status;              // waitpid parameter
-    char *clp;               // Commandline prompt will be represented with 'clp' 
+    char *clp = argv[1];               // Commandline prompt will be represented with 'clp' 
     char *input[MAX_ARGS];
     char commands[MAX_LINE_BUFF];
-
-
-    if (argc == 2) {
-        clp = argv[1];      // approrpriate prompt will be assigned
-    } 
 
     while (1) {
 
